@@ -2,3 +2,78 @@
 
 @include headerDefault;
 @include initializePage;
+
+/* ----------------- news-bar -------------------- */
+.news-bar{
+    background: #efefef url(/images/notice.png) no-repeat 100px 5px;
+    text-align: left;
+    height: 32px;
+    overflow: hidden;
+    background-size: 23px;
+}
+.news-bar>ul{
+    overflow: hidden;
+}
+.news-bar>ul>li{
+    padding-left: 135px;
+    line-height: 34px;
+    height: 32px;
+    overflow: hidden;
+}
+.news-bar>ul>li a{
+    display: inline-block;
+    color: #5d5d5d;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+/* ----------------- content -------------------- */
+.content{
+    width: 100%;
+    .wrap{
+        @include wrapbox;
+        box-sizing: border-box;
+        width: 1100x;
+        padding: 0 15px;
+        margin-top: 40px;
+        min-height: 400px;
+        // background-color: #5d5d5d;]
+        //左侧导航栏
+        .nav-left{
+            width: 18%;
+            float: left;
+            box-sizing: border-box;
+            >div{
+                box-sizing: border-box;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 10px;
+                .product-type{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    >p{
+                        color: #000000;
+                    }
+                    >i{
+                        width: 12px;
+                        height: 20px;
+                        background: url(/images/otherpages/goods-list/arrow-down.png) no-repeat center right;
+                    }
+                }
+            }
+        }
+        //右侧内容栏
+        .content-right{
+            box-sizing: border-box;
+            float: left;
+            width: 80%;
+            min-height: 600px;
+            margin-left: 2%;
+            .choose-box{
+                
+            }
+        }
+    }
+}
