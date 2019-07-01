@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1561639319263'); /* IE9 */
+  src: url('iconfont.eot?t=1561639319263#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAP0AAsAAAAACEAAAAOoAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDTIMCATYCJAMUCwwABCAFhG0HWxshB1GU7kmc7MeBc14LOC2UIoMohlRZh11NTyekz9G3EKIlK7PlKKWoWmWprisUGoVCIbEocAiHQ2iMRhj4YgT3Tn/hr+kY7p7vllWspabtvLTpSl96ZXlQKDeVAeGGQ+IYmFfDe7ejH2pigtQgt3eClWAlwP9zzHRVAvlta7eMwKC9AY4SaECV100negd0YHzD2E2UB3E9gXbTNCun+6cXbKQA6wJxL5KAjVJmpaY2tApNydEiXoGqNT1DHwDzwn8//gNOjEhqBrZe3+3FbPMbcxEAp/6nuqUIQDKeE9pJZKxgCvFQ6r7XDdMrutqdv+s5xLRrlaRvzBnj7OUi///Hle9I2w7VxvjHSwrRANWd4FDMFL5nmEXme4NF8P3PIvEnl76Y6graxYonvAOUGep03h9Q+8FV3Gwcuyyxm5BF8cpPJXvmZbak0Xy8C9JaEZ+8ouKCwqzWNKq3TyH59oJMsmeWWMLmpv3WnkNxFmvnwGl723l6W6J2x2hqS7xqM0EwraNlQAZT1yeV1waU1PbmfgTNGmxllfoXIkjW0IE8slgBuKdHXp1YQ0sFrbARyWpm5DthYBRiKUuT78LDTuROpII7+SP5O0vxHS3u5Y4pgFpss1mhg5f9v+yKzK+eqpr+iOTQn+yxkzcEAuKS4eXw6hos8uSOKmRVn8qcGsYUEtPg8rW18t8xGxsOBxPG1ggo+o6AwqqrGUX6psJXDc3FHklTLChSC53rGrSK29QLs0zHdPuhvQJ0d9uqNxk/PjsMRDfS81fDYGwX92b/9AVni8Xwu5+du9Kctpoe0z0tIz/CjeMxo6L0fy5z9lGRvaXOaytyIX1f7n6hHPrNKKy9+KdoOJK/J2nZUVwZsNRit2Kx7a127xudRHrTP/P3+xlHO9S6mtBqKIakxRRkrWaQBbsCVYcdaLQ6gHbLDk7uMEDpitKGJQ8ChF7vkHT7hKzXJ7Jgv6Ea9geN3uhCu5sgnbPDXIiJnsKAMIbwDkQkK45sNAlqzzBpi0AlZZx6haoRMbANK5s7wArVGDua68Qh4sCVLGFfuBkWhYRayQwjMlKi2jVNXvZFRiRLNnFCQQGCYiB0BwgRqcJpbzLJ/fwZlGgVAqqmrSN8BSkNMTmwGawWyAN11artWl7SuJZwEMIBTpFKYF9wogKmJVCXL8qgCDGkPZI1lyl1423Vxvza8hmPQTtwvhopcpSo0eh6FEGV3LeSDlaiXaSM9jCcH4pADiJS2WaCMQ==') format('woff2'),
+  url('iconfont.woff?t=1561639319263') format('woff'),
+  url('iconfont.ttf?t=1561639319263') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1561639319263#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangzuoanniu:before {
+  content: "\e619";
+}
+
+.icon-xiangzuoanniu1:before {
+  content: "\e6f4";
+}
+
+.icon-zuobiao:before {
+  content: "\e60c";
+}
+
+.icon-shouji:before {
+  content: "\e86b";
+}
+

@@ -1,0 +1,139 @@
+@import "scssTool.scss";
+//清除样式
+@include initializePage;
+
+.clearfloat{
+    @include clearfloat;
+}
+/* --------- header ---------- */
+.header{
+    width: 100%;
+    height: 70px;
+    >a{
+        float: left;
+        width: 70px;
+        height: 70px;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    >h3{
+        float: left;
+        margin-left: 32px;
+        font-size: 28px;
+        line-height: 70px;
+        font-weight: normal;
+    }
+}
+
+/* --------- content ---------- */
+.content{
+    // position: relative;
+    width: 100%;
+    >.wrap{
+        width: 100%;
+        min-height: 500px;
+        margin-top: 12px;
+        margin-bottom: 25px;
+        background: url(../images/register/bg-center.jpg) no-repeat center center;
+        .content-layout{
+            position: relative;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            form{
+                position: absolute;
+                background: #ffffff;
+                top: 46px;
+                right: 0;
+                width: 400px;
+                height: 440px;
+                >.wrap{
+                    width: 280px;
+                    height: 396px;
+                    padding: 35px 60px;
+                    padding-bottom: 10px;
+                    ::placeholder{
+                        color: #d2d2d2;
+                    }
+                    >h3{
+                        color: #000000;
+                        font-size: 20px;
+                        font-weight: bold; 
+                    }
+                    >input{
+                        margin-top: 35px;
+                        width: calc(100% - 15px);
+                        height: 34px;
+                        line-height: 34px;
+                        outline: none;
+                        padding-left: 15px;
+                        font-size: 14px;
+                        color: #A5A5A5;
+                        border: 1px solid #ccc;
+                        margin-bottom: 20px;
+                    }
+                    >input:nth-of-type(1){
+                        margin-bottom: 20px;
+                    }
+                    >input:nth-of-type(2){
+                        margin-top: 20px;
+                    }
+                    >a{
+                        // display: block;
+                        float: right;
+                        margin-top: 10px;
+                        text-align: right;
+                        color: #337ab7;
+                        font-size: 14px;
+                    }
+                    >a:hover{
+                        color: #23527c;
+                        text-decoration: underline;
+                    }
+                    >button{
+                        margin-top: 30px;
+                        margin-bottom: 40px;
+                        width: 100%;
+                        height: 36px;
+                        background: #fd0000;
+                        color: #ffffff;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    >div{
+                        border: none;
+                        font-size: 14px;
+                        margin-right: 0;
+                        a{
+                            padding: 10px 19px;
+                            color: #000000;
+                        }
+                        a:nth-child(1){
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* --------- footer ---------- */
+footer{
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    background: #000000;
+    text-align: center;
+    color: #707070;
+    position: fixed;
+    bottom: 0;
+    line-height: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0;
+}

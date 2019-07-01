@@ -1,0 +1,246 @@
+/* sass变量 */
+$btnColors:#aeaeae;
+$selectNavColor:#f7f7f7 #ffffff!default;
+$default-font-size:16px;
+$wrap-width:1140px;
+
+@mixin initializePage {
+    body, *{
+        font-family: "Helvetica","Lantinghei SC","microsoft yahei";
+        padding: 0;
+        margin: 0;
+        // overflow: hidden;
+    }
+    ul,ol li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        border: none;
+        vertical-align: top;
+    }
+}
+
+@mixin carousel-control {
+    /* 轮播图左右按钮 */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    // left: 0;
+    // width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+@mixin headerDefault {
+    /* ----------------- header -------------------- */
+    header{
+        width: 100%;
+        height: 80px;
+    }
+    /* wrap */
+    header>.wrap{
+        width: 100%;
+        height: 100%;
+    }
+    /* logo */
+    header>.wrap .logo{
+        width: 80px;
+        height: 80px;
+        float: left;
+    }
+    header>.wrap .logo>a>img{
+        width: 100%;
+        height: 100%;
+    }
+    /* nav-and-header */
+    header>.wrap .nav-and-header{
+        float: right;
+        width: calc(100% - 80px);
+        height: 100%;
+    }
+    /* ------ head ------ */
+    header>.wrap .nav-and-header>.head{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #222222;
+    }
+    header>.wrap .nav-and-header>.head>.left-head{
+        float: left;
+        height: 100%;
+    }
+    header>.wrap .nav-and-header>.head>.left-head>li{
+        float: left;
+        height: 100%;
+    }
+    header>.wrap .nav-and-header>.head>.left-head>li>a{
+        float: left;
+        display: block;
+        height: 100%;
+        font-size: 12px;
+        color: #ffffff;
+        padding: 0 20px;
+    }
+    /* 调整几个li的样式 */
+    header>.wrap .nav-and-header>.head .left-head>li:nth-child(1){
+        background-color: #ffffff;
+    }
+    header>.wrap .nav-and-header>.head .left-head>li:nth-child(1) a{
+        color: #585858;
+    }
+
+    header>.wrap .nav-and-header>.head .left-head>li:nth-child(3) a{
+        font-weight: bold;
+    }
+    header>.wrap .nav-and-header>.head .left-head>li:nth-child(3) a span:nth-child(1){
+        color: #e52d1d;
+    }
+
+    /* right-head */
+    header>.wrap .nav-and-header>.head .right-head{
+        float: right;
+        height: 100%;
+    }
+    header>.wrap .nav-and-header>.head .right-head>ul{
+        float: left;
+        height: 100%;
+    }
+    header>.wrap .nav-and-header>.head .right-head>ul>li{
+        float: left;
+    }
+    header>.wrap .nav-and-header>.head .right-head>ul>li>a{
+        float: left;
+        display: block;
+        height: 100%;
+        font-size: 12px;
+        color: #c7c7c7;
+        padding: 0 20px;
+    }
+    /* icon-font */
+    header>.wrap .nav-and-header>.head .right-head .iconfont{
+        float: left;
+        font-size: 14px;
+        margin-right: 5px;
+        top: 2px;
+        color: #c7c7c7 !important;
+    }
+    /* 国旗 */
+    header>.wrap .nav-and-header>.head .right-head .ic-flag{
+        float: left;
+        margin-top: 12px;
+        margin-right: 8px;
+        width: 14px;
+        height: 14px;
+        background: url(/images/ic-flag.png) no-repeat center center;
+    }
+
+    /* shop-char */
+    header>.wrap .nav-and-header>.head>.right-head .shop-cart{
+        position: relative;
+        float: left;
+        min-width: 90px;
+        height: 100%;
+        line-height: 40px;
+        background-color: #f7f7f7;
+    }
+    header>.wrap .nav-and-header>.head>.right-head .shop-cart a{
+        height: 100%;
+        line-height: 40px;
+        text-align: center;
+    }
+    header>.wrap .nav-and-header>.head>.right-head .shop-cart img{
+        width: 22px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        margin-left: -11px;
+    }
+    header>.wrap .nav-and-header>.head>.right-head .shop-cart span{
+        height: 15px;
+        line-height: 14px;
+        padding: 1px 4px 1px 4px;
+        position: absolute;
+        right: 16px;
+        top: 4px;
+        border-radius: 13px 13px 13px 13px;
+        color: #ffffff;
+        font-size: 12px;
+        background: red;
+    }
+    /* ------ nav ------ */
+    header>.wrap .nav-and-header .nav{
+        height: 40px;
+    }
+    header>.wrap .nav-and-header .nav>ul{
+        float: left;
+        height: 100%;
+        width: 65%;
+    }
+    header>.wrap .nav-and-header .nav>ul>li{
+        float: left;
+        height: 100%;
+        line-height: 40px;
+        text-align: center;
+        /* width: 12.5%; */
+        padding: 0 3%;
+    }
+    header>.wrap .nav-and-header .nav>ul>li>a{
+        display: block;
+        color: #000000;
+        font-size: 16px;
+    }
+    /* search-bar */
+    header>.wrap .nav-and-header .nav>form{
+        /* position: absolute; */
+        /* top: 40px;
+        right: 0; */
+        float: right;
+        width: 35% !important;
+        max-width: 500px;
+        /* padding-left: 30px; */
+    }
+    header>.wrap .nav-and-header .nav>form .search-wrap{
+        /* background: #f7f7f7; */
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        position: relative;
+        margin: 5px 12px 0 0;
+        display: flex;
+    }
+    header>.wrap .nav-and-header .nav>form .search-wrap input{
+        box-sizing: border-box;
+        border: 0;
+        height: 30px;
+        line-height: 30px;
+        outline: none;
+        width: 100%;
+        padding: 3px 5px;
+        /* padding-left: 30px; */
+        color: #000;
+        font-size: 14px;
+        background: #e2e2e2;
+    }
+    header>.wrap .nav-and-header .nav>form>.search-wrap i{
+        width: 30px;
+        height: 30px;
+        background: url(/images/ic-nav-search.png);
+    }
+}
+
+@mixin clearfloat {
+    /* 清楚浮动 */
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}

@@ -1,0 +1,1 @@
+"use strict";require.config({baseUrl:"/",paths:{jquery:"libs/jquery/jquery-1.11.3.min",header:"js/module/header"}});
